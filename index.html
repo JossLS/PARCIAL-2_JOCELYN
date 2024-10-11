@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Books Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button class="close-btn">X</button>
+        </div>
+        <div class="header-buttons">
+            <button>Favoritos</button>
+            <div class="image-space">
+                <img src="carrito.png" alt="Imagen derecha">
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <button>Recomendaciones</button>
+        <button>Sucursales</button>
+        <button>Ebooks</button>
+        <button>Ayuda</button>
+    </nav>
+
+    <!-- Carrito de compras -->
+    <div class="cart-container">
+       <center><h2>Carrito de Compras</h2></center> 
+       <br>
+        <div class="cart-item">
+            <img src="libro.png" alt="Producto" class="product-image">
+            <div class="product-details">
+                <h3>El Perdón</h3>
+                <p>Precio: $50</p>
+                <div class="quantity">
+                    <label for="quantity-input">Cantidad:</label>
+                    <input type="number" id="quantity-input" value="1" min="1">
+                </div>
+                <div class="shipping-address">
+                    <label for="address-input">Dirección de Envío:</label>
+                    <input type="text" id="address-input" placeholder="Ingresa tu dirección">
+                </div>
+                <p>Total: <span id="total">$50</span></p>
+            </div>
+        </div>
+
+        <div class="cart-actions">
+            <button id="update-total">Actualizar Total</button>
+            <button id="checkout">Pagar</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
